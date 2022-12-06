@@ -1,0 +1,73 @@
+<html>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+  />
+  <link rel="stylesheet" href="stylesheets/users.css" />
+  <body>
+     <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                        <a href="/" class="nav-brand text-dark">User Management System</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex-justify-between">
+          <a onclick="add_user()" class="border-shadow">
+            <span class="text-gradient">New User
+              <i class="fas fa-user"></i></span>
+          </a>
+        </div>
+      </div>
+      <form action="/" method="post">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Program</th>
+              <th>Gender</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>username</td>
+              <td>123@xyz.com</td>
+              <td>computer Programming</td>
+              <td>male</td>
+              <td>
+                <span class="text-gradient" onclick="update_user()"><i
+                      class="fas fa-pencil-alt"
+                    ></i></span>
+                <a href="#" class="btn border-shadow-delete">
+                  <span class="text-gradient"><i
+                      class="fas fa-times"
+                    ></i></span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ec2f5a2b4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function add_user()
+      { window.location.href = 'crud/add-user' } 
+      
+      function update_user(){ window.location.href = 'crud/update-user' }
+    </script>
+  </body>
+
+</html>

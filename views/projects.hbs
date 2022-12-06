@@ -1,0 +1,57 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="stylesheets/index.css">
+
+<div class="projects">
+    <p>Projects</p>
+</div>
+<div class="project-contents">
+    <div class="section-1">
+        <img src="https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?b=1&s=612x612&w=0&k=20&c=-wTGItN4uscm4sy8X07O4YXhyl2xOBnc9DfzMyUKxJ0=" alt="" class="profile">
+    </div>
+    <div class="section-2">
+        <h1>My work</h1>
+        I have created many projects during my time in the academics and learned many things and tricks while Programming. <br />
+        You can see it Below - 
+    </div>
+</div>
+        <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&w=600" />
+          <p style="color: #fff;">To Do</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://media.istockphoto.com/id/1249219777/photo/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-logo-in-a-trolley-on-a.jpg?b=1&s=612x612&w=0&k=20&c=Z3RsrcQm2G19uOggBLXRtJZ_2mwvHyJikV4Ib3mqgd0=" />
+          <p style="color: #fff;">Ecommerce App </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600" />
+          <p style="color: #fff;">Dashboard</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
